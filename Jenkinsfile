@@ -7,14 +7,13 @@ pipeline {
     }
 
     tools {
-        maven 'Maven 3.8.1'
-        jdk 'Java 17'
+        maven 'maven'
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                git url: 'https://github.com/yourusername/your-repo.git', credentialsId: 'github-creds'
+                git url: 'https://github.com/vineeth11111/EmpMgntDockerJenkins.git', credentialsId: 'github-creds'
             }
         }
 
